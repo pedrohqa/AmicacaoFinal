@@ -5,15 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Amiçãozão</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='brinquedos.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
     <script src='main.js'></script>
-    <link rel="icon" href="logo(cima).png">
+    <link rel="icon" href="img/logo(cima).png">
 </head>
 <body padding:0%>
     <header>
         <div class="barra">
             <a href="index.html">
-            <img src="logotransparente.png" width="65" height="65" class="logo" >
+            <img src="img/logotransparente.png" width="65" height="65" class="logo" >
             </a>
             <ul>
                 <li><a href="adestramento.html">Adestramento</a></li>
@@ -38,11 +38,123 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
             <a href="carrinho.html">
-            <img src="Carrinho.png" width="50" height="50" class="carrinho">
-            </a>
+            <img src="img/Carrinho.png" width="50" height="50" class="carrinho">
+        </a>
         </div>
     </header>
     <!-- colocar assunto do site em div's-->
+
+    <div class="main-div">
+        <h1 center id="titulo">BRINQUEDOS</h1>
+        <br>
+        <br>
+        
+        <div class="coluna1">
+            <div class="produto">
+                <a href="#">
+                <img src="img/1.png" class="img_produto">
+                    <p>Brinquedo Para Cachorro Mordedor Corda Com Bola De Tênis</p>
+                </a>
+                <p id="preco">R$29,90
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+			    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Mordedor', document.getElementById('qtd1').value, '29.99', 1)"> Comprar </button>
+                </p>
+            </div>
+
+            <div class="produto">
+                <a href="#">
+                <img src="img/2.png" class="img_produto">
+                    <p>FRANGO GALINHA DE BORRACHA MORDEDOR</p>
+                </a>
+                <p id="preco">R$5,99
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+			    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('FRANGO', document.getElementById('qtd1').value, '5.99', 1)"> Comprar </button>
+                </p>
+            </div>
+
+            <div class="produto">
+                <a href="#">
+                <img src="img/3.png" class="img_produto">
+                    <p>Bolinha de Pontas Grande Azul</p>
+                </a>
+                <p id="preco">R$25,99 
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha', document.getElementById('qtd1').value, '25.99', 1)"> Comprar </button>
+                </p>
+            </div>
+    
+            <div class="produto">
+                <a href="#">
+                    <img src="img/4.png" class="img_produto">
+                    <p> Bolinha Cordão Trançado 
+                        </p>
+                </a>
+                <p id="preco">R$29,99
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha', document.getElementById('qtd1').value, '29.99', 1)"> Comprar </button>
+                </p>
+            </div>
+        </div>
+        
+        <!-- _____________________________________________________________________________________________________________ -->
+        
+    
+        <div class="coluna1">
+            <div class="produto">
+                <a href="#">
+                <img src="img/5.png" class="img_produto">
+                    <p>Macaco de Pelúcia Marrom</p>
+                </a>
+                <p id="preco">R$39,90
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macaco', document.getElementById('qtd1').value, '39.90', 1)"> Comprar </button>
+                    </p>
+            </div>
+    
+            <div class="produto">
+                <a href="#">
+                <img src="img/6.png" class="img_produto">
+                    <p>Bola Cravo Cores Sortidas</p>
+                </a>
+                <p id="preco">R$37,99
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bola', document.getElementById('qtd1').value, '37.99', 1)"> Comprar </button>
+                    </p>
+            </div>
+    
+            <div class="produto">
+                <a href="#">
+                <img src="img/7.png" class="img_produto">
+                    <p>Urso de Pelúcia para Cães</p>
+                </a>
+                <p id="preco">R$79,90
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Urso', document.getElementById('qtd1').value, '79.90', 1)"> Comprar </button>
+                    </p>
+            </div>
+    
+            <div class="produto">
+                <a href="#">
+                    <img src="img/8.png" class="img_produto">
+                    <p>Cenoura Nylon Buddy Único</p>
+                </a>
+                <p id="preco">R$27,99 qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Cenoura', document.getElementById('qtd1').value, '27.99', 1)"> Comprar </button>
+                    </p>
+            </div>
+        </div>
+	
+		<script>
+			function AddCarrinho(produto, qtd, valor, posicao)
+			{
+				localStorage.setItem("produto" + posicao, produto);
+				localStorage.setItem("qtd" + posicao, qtd);
+				valor = valor * qtd;
+				localStorage.setItem("valor" + posicao, valor);
+				alert("Produto adicionado ao carrinho!");
+			}
+		</script>
+    
     <footer>
         <div class="rodape1">
             <h1>Sobre nós </h1>
@@ -58,17 +170,18 @@
             <h1>Fale Conosco:</h1>
             <a href="https://web.whatsapp.com/" style="text-decoration: none" 
             target="_blank">
-                <img src="whatsapp.png" class="redes">
+                <img src="img/whatsapp.png" class="redes">
             </a>
             <a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
-                <img src="instagram.png" class="redes">
+                <img src="img/instagram.png" class="redes">
             </a>
             <a href="https://www.facebook.com/" style="text-decoration: none" 
             target="_blank">   
-                <img src="facebook.png" class="redes">
+                <img src="img/facebook.png" class="redes">
             </a>
         </div>
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+
 </body>
 </html>

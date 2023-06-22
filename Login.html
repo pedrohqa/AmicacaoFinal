@@ -1,249 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Amiçãozão</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='base.css'>
-    <script src='main.js'></script>
-    <style>
-        body {
-            margin: 0%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        header{
-height: 50px;
-width: auto;
-position: fixed;
-left: 0px;
-right: 0px;
-top: 0px;
-z-index: 10;
-
-}
-.barra{
-width: auto;
-top: 0;
-height: 50px;
-display:flex;
-justify-content:space-around;
-background-color: #a7cfee;
-font-family: 'Inter', sans-serif;
-align-items: center;
-border: 8px solid transparent;
-}
-
-ul{ 
-    width:780px; 
-    list-style: none;      
-}
-ul li{
-    float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
-    background-color: #4988B8;
-    position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
-    border-radius: 25px;
-    display:flex;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 116px;
-    font-weight: 400;
-    text-align: center;
-}
-
-ul li a{
-    display: flex; /* Renderiza o elemento HTML como bloco, tal como os parágrafos e os cabeçalhos o são */
-    padding: 8px;
-    text-decoration:dashed;
-    color: #ffffff;
-    width: 110px;
-    align-items: center;
-    justify-content: center;
-}
-ul li:hover > a{ /* Quando passarmos o mouse sobre a LI colocamos estilo no A */
-    background-color: #2B4F6B;
-    border-radius: 25px; 
-    width: 110px;
-    position:relative;
-}
-
-        ul li ul {
-            display: none;
-            position: absolute;
-            top: 35px;
-            left: -60px;
-            text-align: center;
-            width: 110px;
-        }
-
-        ul li:hover ul {
-            width: 210px;
-            display: block;
-        }
-
-
-        .form-box {
-            max-width: 300px;
-            background: #f1f7fe;
-            border-radius: 16px;
-            color: #2B4F6B;
-            box-shadow: 100px;
-            margin: auto;
-            transform: translateY(-50%);
-            padding: 24px;
-            top: 100px;
-            margin-top: 500px;
-        }
-
-        .form {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            text-align: center;
-        }
-
-        /*Form text*/
-        .title {
-            font-weight: bold;
-            font-size: 1.6rem;
-        }
-
-        .subtitle {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /*Inputs box*/
-        .form-container {
-            overflow: hidden;
-            border-radius: 8px;
-            background-color: #fff;
-            margin: 1rem 0 .5rem;
-            width: 100%;
-        }
-
-        .input {
-            background: none;
-            border: 0;
-            outline: 0;
-            height: 40px;
-            width: 100%;
-            border-bottom: 1px solid #eee;
-            font-size: .9rem;
-            padding: 8px 15px;
-        }
-
-        .form-section {
-            padding: 16px;
-            font-size: .85rem;
-            background-color: #e0ecfb;
-            box-shadow: rgb(0 0 0 / 8%) 0 -1px;
-        }
-
-        .form-section a {
-            font-weight: bold;
-            color: #EBCA46;
-            transition: color .3s ease;
-        }
-
-        .form-section a:hover {
-            color: #EBCA46;
-            text-decoration: underline;
-        }
-
-        /*Button*/
-        .form button {
-            background-color: #EBCA46;
-            color: #fff;
-            border: 0;
-            border-radius: 24px;
-            padding: 10px 16px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #2B4F6B;
-            background-image: url(https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/352706518_716336800501174_8408687067549549956_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=eBo1aQxXpxQAX-2A9y-&_nc_ht=scontent-gru1-1.xx&oh=00_AfBlzx-HzrX05bioH2AVLUHos3cuRMZR84qwPNjUQ-jhDA&oe=64985E0C);
-        }
-
-        footer img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .loginho{
-          position: relative;
-          left: 130px;
-        }
-
-        .form-section{
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-<header>
-    <div class="barra">
-        <a href="index.html">
-            <img src="logotransparente.png" width="65" height="65" class="logo">
-        </a>
-        <ul>
-            <li><a href="adestramento.html">Adestramento</a></li>
-            <li><a href="dogwalker.html">Dog Walker</a></li>
-            <li><a href="petsitter.html">Pet Sitter</a></li>
-            <li>
-                <a href="#">Produtos</a>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Amiçãozão</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <header>
+            <div class="barra">
+                <a href="index.html">
+                    <img src="logotransparente.png" width="65" height="65" class="logo">
+                </a>
                 <ul>
+                    <li><a href="adestramento.html">Adestramento</a></li>
+                    <li><a href="dogwalker.html">Dog Walker</a></li>
+                    <li><a href="petsitter.html">Pet Sitter</a></li>
                     <li>
-                        <a href="brinquedos.html">Brinquedos</a>
+                        <a href="#">Produtos</a>
+                        <ul>
+                            <li>
+                                <a href="brinquedos.html">Brinquedos</a>
+                            </li>
+                            <li>
+                                <a href="petiscos.html">Petiscos</a>
+                            </li>
+                            <li>
+                                <a href="coleiras.html">Coleiras</a>
+                            </li>
+                            <li>
+                                <a href="equipamentos.html">Equip. Adestramento</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="petiscos.html">Petiscos</a>
-                    </li>
-                    <li>
-                        <a href="coleiras.html">Coleiras</a>
-                    </li>
-                    <li>
-                        <a href="equipamentos.html">Equip. Adestramento</a>
-                    </li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
-            </li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-        <a href="carrinho.html">
-            <img src="Carrinho.png" width="50" height="50" class="carrinho">
-        </a>
-    </div>
-</header>
-
-<div class="form-box">
-    <form class="form">
-        <span class="title">Login</span>
-        <a>AuAu! Entre na sua conta</a>
-        <img class="loginho" src="logotransparente.png" width="40">
-        <span class="subtitle"></span>
-        <div class="form-container">
-            <input type="email" class="input" placeholder="Email">
-            <input type="password" class="input" placeholder="Senha">
+                <a href="carrinho.html">
+                    <img src="Carrinho.png" width="50" height="50" class="carrinho">
+                </a>
+            </div>
+        </header>
+        <div class="form-box">
+            <form class="form">
+                <span class="title">Login</span>
+                <a>AuAu! Entre na sua conta</a>
+                <img class="loginho" src="logotransparente.png" width="40">
+                <span class="subtitle"></span>
+                <div class="form-container">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Senha">
+                </div>
+                <button>Entrar</button>
+            </form>
+            <div class="form-section">
+                <p>Não tem uma conta? <a href="cadastrese.html">Cadastre-se</a></p>
+            </div>
         </div>
-        <button><a href="index.html" class="entrar">Entrar</a></button>
-    </form>
-    <div class="form-section">
-        <p>Não tem uma conta? <a href="cadastrese.html">Cadastre-se</a></p>
-    </div>
-</div>
 
 <footer>
     <img class="foto" src="Novo Projeto (18).png">
 </footer>
 
-</body>
+    </body>
 </html>
 
