@@ -3,13 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Amiçãozão</title>
+    <title>Amicaozao</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='cadastrese.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="icon" href="logo(cima).png">
 </head>
-<body padding:0%>
+<body>
     <header>
         <div class="barra">
             <a href="index.html">
@@ -42,33 +41,210 @@
             </a>
         </div>
     </header>
-    <!-- colocar assunto do site em div's-->
-    <footer>
-        <div class="rodape1">
-            <h1>Sobre nós </h1>
-            <p>Iniciaram nossa empresa em 2023 em uma loja física 
-            <br>
-                em Santo André de adestramento, e agora também estamos 
-            <br>
-                nas plataformas digitais com novidades e melhor 
-            <br>
-                praticidade pra você.</p>
+
+
+
+    <div class="form-box">
+        <form class="form">
+            <span class="title">Cadastro</span>
+            <a>Auuu! Insira seus dados e crie uma conta</a>
+            <img class="loginho" src="logotransparente.png" width="40">
+            <span class="subtitle"></span>
+            <div class="form-container">
+                    <input type="name" class="input" placeholder="Nome do Pet">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Senha">
+                    <input type="search" class="input" placeholder="Raça">
+                    <input type="number" class="input" placeholder="Idade">
+                    <a><input name="radio" type="radio">Macho</a>
+                    <a><input name="radio" type="radio">Fêmea</a>
+                    <input type="text" class="input" placeholder="Porte">
+
+            </div>
+            <button>Cadastrar-se</button>
+        </form>
+        <div class="form-section">
+          <p>Já tem uma conta? <a href="">Login</a> </p>
         </div>
-        <div class="rodape2">
-            <h1>Fale Conosco:</h1>
-            <a href="https://web.whatsapp.com/" style="text-decoration: none" 
-            target="_blank">
-                <img src="whatsapp.png" class="redes">
-            </a>
-            <a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
-                <img src="instagram.png" class="redes">
-            </a>
-            <a href="https://www.facebook.com/" style="text-decoration: none" 
-            target="_blank">   
-                <img src="facebook.png" class="redes">
-            </a>
         </div>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+
+        <footer>
+            <img class="foto" src="Novo Projeto (18).png">
+        </footer>
+
 </body>
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header{
+            height: 50px;
+            width: auto;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            z-index: 10;
+        }
+        .barra{
+            width: auto;
+            top: 0;
+            height: 50px;
+            display:flex;
+            justify-content:space-around;
+            background-color: #a7cfee;
+            font-family: 'Inter', sans-serif;
+            align-items: center;
+            border: 8px solid transparent;
+        }
+
+        ul{ 
+            width:780px; 
+            list-style: none;      
+        }
+        ul li{
+            float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
+            background-color: #4988B8;
+            position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
+            border-radius: 25px;
+            display:flex;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 116px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        ul li a{
+            display: flex; /* Renderiza o elemento HTML como bloco, tal como os parágrafos e os cabeçalhos o são */
+            padding: 8px;
+            text-decoration:dashed;
+            color: #ffffff;
+            width: 110px;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li:hover > a{ /* Quando passarmos o mouse sobre a LI colocamos estilo no A */
+            background-color: #2B4F6B;
+            border-radius: 25px; 
+            width: 110px;
+            position:relative;
+        }
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: -60px;
+            text-align: center;
+            width: 110px;
+        }
+
+        ul li:hover ul {
+            width: 210px;
+            display: block;
+        }
+
+
+        .form-box {
+            max-width: 300px;
+            background: #f1f7fe;
+            border-radius: 16px;
+            color: #2B4F6B;
+            box-shadow: 100px;
+            margin: auto;
+            transform: translateY(-50%);
+            padding: 24px;
+            top: 100px;
+            margin-top: 500px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+        }
+
+        /*Form text*/
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /*Inputs box*/
+        .form-container {
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #fff;
+            margin: 1rem 0 .5rem;
+            width: 100%;
+        }
+
+        .input {
+            background: none;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            font-size: .9rem;
+            padding: 8px 15px;
+        }
+
+        .form-section {
+            padding: 16px;
+            font-size: .85rem;
+            background-color: #e0ecfb;
+            box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+        }
+
+        .form-section a {
+            font-weight: bold;
+            color: #EBCA46;
+            transition: color .3s ease;
+        }
+
+        .form-section a:hover {
+            color: #EBCA46;
+            text-decoration: underline;
+        }
+
+        /*Button*/
+        .form button {
+            background-color: #EBCA46;
+            color: #fff;
+            border: 0;
+            border-radius: 24px;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            background-image: url(https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/352706518_716336800501174_8408687067549549956_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=IwRsm0IQTrEAX_W14Ia&_nc_ht=scontent-gru1-1.xx&oh=00_AfDHqljgwdbGe_IMwTWAeRUQXhXAa-mLIqUoKgzG3PP-UA&oe=64926F4C);
+        }
+
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .loginho{
+          position: relative;
+          left: 130px;
+        }
+    </style>
 </html>
