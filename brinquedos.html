@@ -77,7 +77,8 @@
                 <img src="img/3.png" class="img_produto">
                     <p>Bolinha de Pontas Grande Azul</p>
                 </a>
-                <p id="preco">R$25,99 qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                <p id="preco">R$25,99 
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
                 <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha', document.getElementById('qtd1').value, '25.99', 1)"> Comprar </button>
                 </p>
             </div>
@@ -148,7 +149,7 @@
 			{
 				localStorage.setItem("produto" + posicao, produto);
 				localStorage.setItem("qtd" + posicao, qtd);
-				valor = valor * qtd;
+				valor *= qtd;
 				localStorage.setItem("valor" + posicao, valor);
 				alert("Produto adicionado ao carrinho!");
 			}
