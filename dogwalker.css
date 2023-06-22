@@ -141,6 +141,7 @@ ul li:hover ul{
     bottom: -90px;
     z-index: 2;
     margin-top: 0;
+    text-decoration: underline;
 }
 
 .retangulo{
@@ -370,6 +371,7 @@ button:active {
   position: relative;
   top: 10px;
   align-items: center;
+  margin-left: 15px;
 }
 
 .logo2{
@@ -381,10 +383,11 @@ button:active {
 
 .numero{
   position: relative;
-  width: 155px;
+  width: 180px;
   margin-right: none;
   bottom: 15px;
-  float: right;
+  float: left;
+  height: 50px;
 }  
 
  footer{
@@ -423,6 +426,12 @@ button:active {
     margin-right: 30px;
     border-radius: 8px;
 }
+
+.redes{
+  margin: 10px;
+  width: 40px;
+}
+
 
 .redes{
   margin: 10px;
