@@ -71,6 +71,73 @@ ul li:hover ul{
     display: block; 
 }
 
+.coluna1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.produto {
+    font-size: small;
+    font-weight: bolder;
+    width: 17.3vw;
+    height: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1.5px solid;
+    border-color: #000000;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+}
+
+.produto img {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none; 
+    color: #000000; /* Define a cor desejada para os links não visitados */ 
+} 
+
+.produto > a:hover { 
+    text-decoration: underline; 
+    color: #2d7ee7; /* Define a cor desejada para os links ao passar o mouse */ 
+}
+
+.produto > a > p{
+    min-height: 40px;
+    font-size: 2.5vh;
+}
+
+.produto > a > img {
+    width: 12vw;
+    height: 12vw;
+}
+
+#preco {
+    font-size: 3vh;
+    color: white;
+    font-weight: 400;
+    width: 130px;
+    background: linear-gradient(270deg, #016cf8 0%, #1d1fa1 37.08%);
+    mix-blend-mode: normal;
+    border: 1px solid #3197f7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #008cff;
+}
+
+#preco:hover {
+    zoom: 1.2;
+    transition: zoom 0.75;
+}
+
  footer{
 position:absolute;
 margin: 0px;
@@ -80,7 +147,7 @@ height: 210px;
 background-color: #A7CFEE;
 color: #2B4F6B;
 justify-content: space-between;
-/* border: 10px solid tansparent; */
+/* border: 10px solid transparent; */
 
 }
 .rodape1{
