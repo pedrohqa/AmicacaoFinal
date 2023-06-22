@@ -72,9 +72,10 @@ ul li:hover ul{
 }
 
 .slider {
-    top: 65px;
-    width: 100%;
-    height: 400px;
+    top: 75px;
+    width: 932px;
+    height: 250px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     margin: auto;
