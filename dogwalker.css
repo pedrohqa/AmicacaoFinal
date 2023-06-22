@@ -1,6 +1,6 @@
 body{
     margin: 0%;
-    height: 650px;
+    height: 200px;
     
 }
 header{
@@ -35,6 +35,7 @@ ul li{
     position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
     border-radius: 25px;
     display:flex;
+    /* display:inline-table; */
     margin-right: 20px;
     margin-left: 20px;
     width: 116px;
@@ -53,7 +54,6 @@ ul li a{
 ul li:hover > a{ /* Quando passarmos o mouse sobre a LI colocamos estilo no A */
     background-color: #2B4F6B;
     border-radius: 25px; 
-    width: 110px;
     position:relative;
 }
 
@@ -71,18 +71,332 @@ ul li:hover ul{
     display: block; 
 }
 
-/* adicionas o resto do css */
+.painel{
+  position: relative;
+  /* top: 25px; */
+  border-radius: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  background: transparent ;
+  height: 600px;
+}
+
+.texto1{
+    margin-top: none;
+    position: relative;
+    margin-left: 400px;
+    margin-right: 350px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    color: #5FAFEB;
+    font-family: 'Gill Sans MT';
+    background: #002646;
+    top: 100px; 
+    height: 62px;
+    width: 420px;
+    z-index: 2;
+}
+
+.dogwalker{
+  opacity: 85%;
+  float: center;
+  margin-top:0;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  color: #A7CFEE;
+  text-shadow: 2px 2px 10px #000;
+  border-radius: 8px;
+  margin-left: 0px;
+  align-content: flex-start;
+  top: -30px;
+  bottom: 150px;
+}
+.texto2{
+  background-color: #002646;
+  border-radius: 8px;
+  position: relative;
+  height: 350px;
+  width:600px;
+  align-items: center;
+  top: 70px;
+  margin-left: 350px;
+}
+.texto2 h2{
+    justify-content: center;
+    position: relative;
+    margin-right: 0px;
+    text-align: center;
+    color: #A7CFEE;
+    bottom: -200px;
+    top: 90px;
+}
+.texto2 h1{
+    position: relative;
+    margin-right: 0px;
+    text-align: center;
+    color: #A7CFEE;
+    bottom: -90px;
+    z-index: 2;
+    margin-top: 0;
+}
+
+.retangulo{
+position: relative;
+width: 30%;
+height:370px;
+background: #A7CFEE;
+border-radius: 15px;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-right: 10px;
+margin-left: 900px;
+bottom: 450px;
+border-radius: 8%;
+
+}
+
+.primeira{
+  position: relative;
+  color: #4988B8;
+  font-size: 50px;
+  top: 15px;
+}
+.gratuita{
+  position: relative;
+  color: #4988B8;
+  font-size: 50px;
+  top: -5px;
+}
+.agende{
+  color: #35658a;
+}
+
+.atendimento{
+  color: #35658a;
+  font-size: large;
+}
+.img{
+   position: relative;
+  margin-right: 160px;
+  width: 40px;
+  height: 40px; 
+}
+
+.link{
+  width: 40px;
+  height: 40px; 
+ margin-left:15px ;
+}
+
+.contato{
+  color: #35658a;
+  position: relative;
+  align-items: center;
+  bottom: 57px;
+  margin-left: 120px;
+  width: 200px;;
+}
+
+.painel2{
+  position: relative;
+  background-color: #A7CFEE;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  bottom: 75px;
+  height: 600px;
+}
+.linha1{
+  position: relative;
+  background: #5FAFEB;
+  border-radius: 15px;
+  top: 10px;
+  color: #002646;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.titulo1{
+  font-family: 'Gill Sans MT'
+}
+
+.coluna1{
+  display: inline-block;
+  width: 33.33%;
+  vertical-align: top; 
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.text1{
+color: #002646;
+}
+
+.text2{
+  height: 50px;
+  width: 225px;
+  margin-left: 100px;
+  color: #002646;
+}
+
+.coluna2{
+  display: inline-block;
+  width: 33.33%; /* Divide o espaço igualmente entre as três divs */
+  vertical-align: top; /* Alinha as divs verticalmente no topo */
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+.text3{
+  width: 250px;
+  color: #A7CFEE;
+  text-shadow: 2px 2px 10px #000;
+  border-radius: 15px;
+  margin-left: 80px;
+  
+}
+
+.text4{
+  color: #002646;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+.text5{
+  color: #002646;
+  text-align: center;
+  font-size: large;
+  text-decoration: none;
+}
+
+.text6{
+  text-align: center;
+  color: #002646;
+  font-size: large;
+}
+
+.coluna3{
+  float: right;
+  vertical-align: top; /* Alinha as divs verticalmente no topo */
+  box-sizing: border-box;
+  width: 380px;
+  height: 375px;
+  background: #b0ddff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  margin-left: none;
+  bottom: 399px;
+  margin: 10px;
+  justify-content: center;
+  margin-right: none;
+}
+
+.pacotes{
+  color: #2B4F6B;
+}
+
+.valor{
+  color: #4988B8;
+} 
+
+.button {
+padding: 1.3em 3em;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #2B4F6B;
+background-color: #5FAFEB;
+border: none;
+border-radius: 45px;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+top: 10px;
+position: relative;
+left: 44px;
+margin-right: 80px;
+background-image: url('Carrinho.png');
+background-repeat: no-repeat;
+background-position: left;
+background-size: contain;
+background-size: 45px;
+background-position-x: 25px;
+padding-left: 70px; 
+}
+
+button:hover {
+  background-color: #4988B8;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+  background-image: url('Carrinho2.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-size: 45px;
+  background-position-x: 25px;
+  padding-left: 70px; 
+  } 
+
+button:active {
+  transform: translateY(-1px);
+} 
+
+.linha2{
+  position: relative;
+  background: #5FAFEB;
+  border-radius: 15px;
+  height: 100px;
+  top: 10px;
+  color: #002646;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.titulo2{
+  font-family: 'Gill Sans MT';
+  position: relative;
+  top: 10px;
+  align-items: center;
+}
+
+.logo2{
+  position: relative;
+  margin-left: 455px; 
+  float: left;
+  width: 45px; 
+}
+
+.numero{
+  position: relative;
+  width: 155px;
+  margin-right: none;
+  bottom: 15px;
+  float: right;
+}  
 
  footer{
-position:absolute;
-margin: 0px;
-bottom: -500px;  /*sempre deixar do mesmo tamanho do height body da pagina porem negativo (-) */
-width: 100%;
-height: 210px;
-background-color: #A7CFEE;
-color: #2B4F6B;
-justify-content: space-between;
-/* border: 10px solid transparent; */
+  position:absolute;
+  margin: 0px;
+  bottom: -1450px;  /*sempre deixar do mesmo tamanho do height body da pagina porem negativo (-) */
+  width: 100%;
+  height: 210px;
+  background-color: #A7CFEE;
+  color: #2B4F6B;
+  justify-content: space-between;
+  /* border: 10px solid transparent; */
 
 }
 .rodape1{
@@ -107,10 +421,10 @@ justify-content: space-between;
     bottom: -5px;
     float: right ;
     margin-right: 30px;
-    
+    border-radius: 8px;
 }
 
 .redes{
-margin: 10px;
-width: 40px;
+  margin: 10px;
+  width: 40px;
 }
