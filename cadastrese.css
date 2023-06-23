@@ -1,0 +1,218 @@
+body {
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #bfe2ff;
+}
+
+header{
+    height: 50px;
+    width: auto;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+}
+.barra{
+    width: auto;
+    top: 0;
+    height: 50px;
+    display:flex;
+    justify-content:space-around;
+    background-color: #a7cfee;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    border: 8px solid transparent;
+}
+.foto1{
+    max-width: 100%;
+    height: auto;
+    top: 200px;
+    height: 280px;
+    z-index: -10;
+}
+
+ul{ 
+    width:780px; 
+    list-style: none;      
+}
+
+ul li{
+    float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
+    background-color: #4988B8;
+    position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
+    border-radius: 25px;
+    display:flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 116px;
+    font-weight: 400;
+    text-align: center;
+}
+
+ul li a{
+    display: flex; /* Renderiza o elemento HTML como bloco, tal como os parágrafos e os cabeçalhos o são */
+    padding: 8px;
+    text-decoration:dashed;
+    color: #ffffff;
+    width: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li:hover > a{ /* Quando passarmos o mouse sobre a LI colocamos estilo no A */
+    background-color: #2B4F6B;
+    border-radius: 25px; 
+    width: 110px;
+    position:relative;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -60px;
+    text-align: center;
+    width: 110px;
+}
+
+ul li:hover ul {
+    width: 210px;
+    display: block;
+}
+
+.form-box {
+    position: relative;
+    max-width: 275px;
+    background: #f1f7fe;
+    border-radius: 16px;
+    color: #2B4F6B;
+    margin: auto;
+    transform: translateY(-50%);
+    padding: 24px;
+    top: 434px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+    bottom: 25px;
+}
+
+.entrar{
+    position:relative;
+    bottom: 10px;
+    text-decoration: none;
+}
+.entrar a {
+    font-weight: bold;
+    color: #2B4F6B;
+    transition: color .3s ease;
+}
+
+.entrar:hover a{
+    color: #ffffff;
+}
+
+.input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+}
+
+.form-section {
+    padding: 4px;
+    font-size: .85rem;
+    background-color: #e0ecfb;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+    font-weight: bold;
+    color: #4988B8;
+    transition: color .3s ease;
+}
+
+.form-section a:hover {
+    color: #5FAFEB;
+    text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+    background-color: #5FAFEB;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    position: relative;
+    text-align: center;
+    background: #4988B8;
+    width: auto;
+    height: auto;
+    bottom: 160px;
+    z-index: -2;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.loginho{
+  position: relative;
+  left: 120px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.foto{
+    background: #4988B8;
+}
+
+option{
+    border-radius: 15px;
+    color: #2B4F6B;
+}
