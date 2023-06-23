@@ -346,13 +346,17 @@ button:active {
   font-family: 'Gill Sans MT';
   position: relative;
   top: 10px;
+  margin-left: 40px;
+  
 }
 
 .logo2{   
   width: 45px; 
   position: relative;
-  margin-left: 450px; 
+  margin-left: 550px; 
   top: 55px;
+  
+ 
 
 }
 
