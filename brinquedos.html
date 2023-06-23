@@ -1,314 +1,290 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Amiçãozão</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
-    <script src='main.js'></script>
-    <link rel="icon" href="img/logo(cima).png">
-</head>
-<body padding:0%>
-    <header>
-        <div class="barra">
-            <a href="index.html">
-            <img src="img/logotransparente.png" width="65" height="65" class="logo" >
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Amiçãozão</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+        <script src='main.js'></script>
+        <link rel="icon" href="img/logo(cima).png">
+    </head>
+    <body padding:0%>
+        <header>
+            <div class="barra">
+                <a href="index.html">
+                <img src="img/logotransparente.png" width="65" height="65" class="logo" >
+                </a>
+                <ul>
+                    <li><a href="adestramento.html">Adestramento</a></li>
+                    <li><a href="dogwalker.html">Dog Walker</a></li>
+                    <li><a href="petsitter.html">Pet Sitter</a></li>
+                        <li><a href="#">Produtos</a>
+                            <ul>
+                                <li>
+                                    <a href="brinquedos.html">Brinquedos</a>
+                                </li>
+                                <li>
+                                    <a href="petiscos.html">Petiscos</a>
+                                </li>
+                                <li>
+                                    <a href="coleiras.html">Coleiras</a>
+                                </li>
+                                <li>
+                                    <a href="equipamentos.html">Equip. Adestramento</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <a href="carrinho.html">
+                <img src="img/Carrinho.png" width="50" height="50" class="carrinho">
             </a>
-            <ul>
-                <li><a href="adestramento.html">Adestramento</a></li>
-                <li><a href="dogwalker.html">Dog Walker</a></li>
-                <li><a href="petsitter.html">Pet Sitter</a></li>
-                    <li><a href="#">Produtos</a>
-                        <ul>
-                            <li>
-                                <a href="brinquedos.html">Brinquedos</a>
-                            </li>
-                            <li>
-                                <a href="petiscos.html">Petiscos</a>
-                            </li>
-                            <li>
-                                <a href="coleiras.html">Coleiras</a>
-                            </li>
-                            <li>
-                                <a href="equipamentos.html">Equip. Adestramento</a>
-                            </li>
-                        </ul>
-                    </li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-            <a href="carrinho.html">
-            <img src="img/Carrinho.png" width="50" height="50" class="carrinho">
-        </a>
-        </div>
-    </header>
-
-
-    <div class="main-div">
-        <h1 center id="titulo">BRINQUEDOS</h1>
-        <br>
-        <br>
-        <div class="coluna1">
-            <div class="produto">
-                <a href="#">
-                <img src="img/1.png" class="img_produto">
-                    <p>Corda Com Bola De Tênis<br><br>$29,90</p>
-                </a>
-                <button onclick="aumentarQuantidade1()">+</button>   
-                <input type="number"  value="1" min="1" max="10" id="qtd1">
-                <button onclick="diminuirQuantidade1()">-</button>
-			    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Corda Com Bola De Tênis', document.getElementById('qtd1').value, '29.99', 1)"> Comprar </button>
-                </p>
             </div>
-
-            <div class="produto">
-                <a href="#">
-                <img src="img/2.png" class="img_produto">
-                    <p>Galinha De Borracha Mordedor<br><br>R$5,99</p>
-                </a>
-                
-                    <button onclick="aumentarQuantidade2()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd2">
-                    <button onclick="diminuirQuantidade2()">-</button>
-			    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Galinha De Borracha Mordedor', document.getElementById('qtd2').value, '5.99', 2)"> Comprar </button>
-                </p>
-            </div>
-
-            <div class="produto">
-                <a href="#">
-                <img src="img/3.png" class="img_produto">
-                    <p>Bolinha de Pontas Grande Azul<br><br>R$25,99 </p>
-                </a>
-                
-                    <button onclick="aumentarQuantidade3()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd3">
-                    <button onclick="diminuirQuantidade3()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha de Pontas Grande Azul', document.getElementById('qtd3').value, '25.99', 3)"> Comprar </button>
-                </p>
-            </div>
-    
-            <div class="produto">
-                <a href="#">
-                    <img src="img/4.png" class="img_produto">
-                    <p> Bolinha Cordão Trançado<br><br>R$29,99</p>
-                </a>
-                    <button onclick="aumentarQuantidade4()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd4">
-                    <button onclick="diminuirQuantidade4()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha Cordão Trançado', document.getElementById('qtd4').value, '29.99', 4)"> Comprar </button>
-                </p>
-            </div>
-        </div>
-        
-        <!-- _____________________________________________________________________________________________________________ -->
-        
-    
-        <div class="coluna1">
-            <div class="produto">
-                <a href="#">
-                <img src="img/5.png" class="img_produto">
-                    <p>Macaco de Pelúcia Marrom<br><br>R$39,90</p>
-                </a>
-                    <button onclick="aumentarQuantidade5()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd5">
-                    <button onclick="diminuirQuantidade5()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macaco de Pelúcia Marrom', document.getElementById('qtd5').value, '39.90', 5)"> Comprar </button>
-                </p>
-            </div>
-    
-            <div class="produto">
-                <a href="#">
-                <img src="img/6.png" class="img_produto">
-                    <p>Bola Cravo Cores Sortidas<br><br>R$37,99</p>
-                </a>
-                
-                    <button onclick="aumentarQuantidade6()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd6">
-                    <button onclick="diminuirQuantidade6()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bola Cravo Cores Sortidas', document.getElementById('qtd6').value, '37.99', 6)"> Comprar </button>
-                </p>
-            </div>
-    
-            <div class="produto">
-                <a href="#">
-                <img src="img/7.png" class="img_produto">
-                    <p>Urso de Pelúcia para Cães<br><br> R$79,90</p>
-                </a>
-                    <button onclick="aumentarQuantidade7()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd7">
-                    <button onclick="diminuirQuantidade7()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Urso de Pelúcia para Cães', document.getElementById('qtd7').value, '79.90', 7)"> Comprar </button>
-                </p>
-            </div>
-    
-            <div class="produto">
-                <a href="#">
-                    <img src="img/8.png" class="img_produto">
-                    <p>Cenoura De Nylon <br><br> R$27,99</p>
-                </a> 
-                    <button onclick="aumentarQuantidade8()">+</button>   
-                    <input type="number"  value="1" min="1" max="10" id="qtd8">
-                    <button onclick="diminuirQuantidade8()">-</button>
-                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Cenoura De Nylon ', document.getElementById('qtd8').value, '27.99', 8)"> Comprar </button>
-                </p>
-            </div>
-        </div>
-        <script>
-        function aumentarQuantidade1() {
-			var quantidadeElemento = document.getElementById("qtd1");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade1() {
-			var quantidadeElemento = document.getElementById("qtd1");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}
-
-		function aumentarQuantidade2() {
-			var quantidadeElemento = document.getElementById("qtd2");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade2() {
-			var quantidadeElemento = document.getElementById("qtd2");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}
-        function aumentarQuantidade3() {
-			var quantidadeElemento = document.getElementById("qtd3");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade3() {
-			var quantidadeElemento = document.getElementById("qtd3");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}
-        function aumentarQuantidade4() {
-			var quantidadeElemento = document.getElementById("qtd4");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade4() {
-			var quantidadeElemento = document.getElementById("qtd4");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}        function aumentarQuantidade5() {
-			var quantidadeElemento = document.getElementById("qtd5");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade5() {
-			var quantidadeElemento = document.getElementById("qtd5");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}        function aumentarQuantidade6() {
-			var quantidadeElemento = document.getElementById("qtd6");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade6() {
-			var quantidadeElemento = document.getElementById("qtd6");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}        function aumentarQuantidade7() {
-			var quantidadeElemento = document.getElementById("qtd7");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade7() {
-			var quantidadeElemento = document.getElementById("qtd2");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}        function aumentarQuantidade8() {
-			var quantidadeElemento = document.getElementById("qtd8");
-			var quantidade = parseInt(quantidadeElemento.value);
-			quantidade++;
-			quantidadeElemento.value = quantidade;
-		}
-
-		function diminuirQuantidade8() {
-			var quantidadeElemento = document.getElementById("qtd8");
-			var quantidade = parseInt(quantidadeElemento.value);
-			if (quantidade > 0) {
-				quantidade--;
-				quantidadeElemento.value = quantidade;
-			}
-		}
-        </script>
-		<script>
-			function AddCarrinho(produto, qtd, valor, posicao)
-			{
-				localStorage.setItem("produto" + posicao, produto);
-				localStorage.setItem("qtd" + posicao, qtd);
-				valor = valor * qtd;
-				localStorage.setItem("valor" + posicao, valor);
-				alert("Produto adicionado ao carrinho!");
-			}
-		</script>
-    <footer>
-        <div class="rodape1">
-            <h1>Sobre nós </h1>
-            <p>Iniciaram nossa empresa em 2023 em uma loja física 
+        </header>
+        <div class="main-div">
+            <h1 center id="titulo">BRINQUEDOS</h1>
             <br>
-                em Santo André de adestramento, e agora também estamos 
             <br>
-                nas plataformas digitais com novidades e melhor 
-            <br>
-                praticidade pra você.</p>
-        </div>
-        <div class="rodape2">
-            <h1>Fale Conosco:</h1>
-            <a href="https://web.whatsapp.com/" style="text-decoration: none" 
-            target="_blank">
-                <img src="img/whatsapp.png" class="redes">
-            </a>
-            <a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
-                <img src="img/instagram.png" class="redes">
-            </a>
-            <a href="https://www.facebook.com/" style="text-decoration: none" 
-            target="_blank">   
-                <img src="img/facebook.png" class="redes">
-            </a>
-        </div>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
-
-</body>
+            <div class="coluna1">
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/1.png" class="img_produto">
+                        <p>Corda Com Bola De Tênis<br><br>$29,90</p>
+                    </a>
+                    <button onclick="aumentarQuantidade1()">+</button>   
+                    <input type="number"  value="1" min="1" max="10" id="qtd1">
+                    <button onclick="diminuirQuantidade1()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Corda Com Bola De Tênis', document.getElementById('qtd1').value, '29.99', 1)"> Comprar </button>
+                    </p>
+                </div>
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/2.png" class="img_produto">
+                        <p>Galinha De Borracha Mordedor<br><br>R$5,99</p>
+                    </a>                    
+                        <button onclick="aumentarQuantidade2()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd2">
+                        <button onclick="diminuirQuantidade2()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Galinha De Borracha Mordedor', document.getElementById('qtd2').value, '5.99', 2)"> Comprar </button>
+                    </p>
+                </div>
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/3.png" class="img_produto">
+                        <p>Bolinha de Pontas Grande Azul<br><br>R$25,99 </p>
+                    </a>                    
+                        <button onclick="aumentarQuantidade3()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd3">
+                        <button onclick="diminuirQuantidade3()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha de Pontas Grande Azul', document.getElementById('qtd3').value, '25.99', 3)"> Comprar </button>
+                    </p>
+                </div>        
+                <div class="produto">
+                    <a href="#">
+                        <img src="img/4.png" class="img_produto">
+                        <p> Bolinha Cordão Trançado<br><br>R$29,99</p>
+                    </a>
+                        <button onclick="aumentarQuantidade4()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd4">
+                        <button onclick="diminuirQuantidade4()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bolinha Cordão Trançado', document.getElementById('qtd4').value, '29.99', 4)"> Comprar </button>
+                    </p>
+                </div>
+            </div>            
+            <!-- _____________________________________________________________________________________________________________ -->     
+            <div class="coluna1">
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/5.png" class="img_produto">
+                        <p>Macaco de Pelúcia Marrom<br><br>R$39,90</p>
+                    </a>
+                        <button onclick="aumentarQuantidade5()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd5">
+                        <button onclick="diminuirQuantidade5()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macaco de Pelúcia Marrom', document.getElementById('qtd5').value, '39.90', 5)"> Comprar </button>
+                    </p>
+                </div>        
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/6.png" class="img_produto">
+                        <p>Bola Cravo Cores Sortidas<br><br>R$37,99</p>
+                    </a>
+                        <button onclick="aumentarQuantidade6()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd6">
+                        <button onclick="diminuirQuantidade6()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bola Cravo Cores Sortidas', document.getElementById('qtd6').value, '37.99', 6)"> Comprar </button>
+                    </p>
+                </div>
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/7.png" class="img_produto">
+                        <p>Urso de Pelúcia para Cães<br><br> R$79,90</p>
+                    </a>
+                        <button onclick="aumentarQuantidade7()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd7">
+                        <button onclick="diminuirQuantidade7()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Urso de Pelúcia para Cães', document.getElementById('qtd7').value, '79.90', 7)"> Comprar </button>
+                    </p>
+                </div>
+                <div class="produto">
+                    <a href="#">
+                        <img src="img/8.png" class="img_produto">
+                        <p>Cenoura De Nylon <br><br> R$27,99</p>
+                    </a> 
+                        <button onclick="aumentarQuantidade8()">+</button>   
+                        <input type="number"  value="1" min="1" max="10" id="qtd8">
+                        <button onclick="diminuirQuantidade8()">-</button>
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Cenoura De Nylon ', document.getElementById('qtd8').value, '27.99', 8)"> Comprar </button>
+                    </p>
+                </div>
+            </div>
+            <script>
+            function aumentarQuantidade1() {
+                var quantidadeElemento = document.getElementById("qtd1");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade1() {
+                var quantidadeElemento = document.getElementById("qtd1");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }
+            function aumentarQuantidade2() {
+                var quantidadeElemento = document.getElementById("qtd2");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade2() {
+                var quantidadeElemento = document.getElementById("qtd2");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }
+            function aumentarQuantidade3() {
+                var quantidadeElemento = document.getElementById("qtd3");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade3() {
+                var quantidadeElemento = document.getElementById("qtd3");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }
+            function aumentarQuantidade4() {
+                var quantidadeElemento = document.getElementById("qtd4");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade4() {
+                var quantidadeElemento = document.getElementById("qtd4");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }        function aumentarQuantidade5() {
+                var quantidadeElemento = document.getElementById("qtd5");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade5() {
+                var quantidadeElemento = document.getElementById("qtd5");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }        function aumentarQuantidade6() {
+                var quantidadeElemento = document.getElementById("qtd6");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade6() {
+                var quantidadeElemento = document.getElementById("qtd6");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }        function aumentarQuantidade7() {
+                var quantidadeElemento = document.getElementById("qtd7");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade7() {
+                var quantidadeElemento = document.getElementById("qtd2");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }        function aumentarQuantidade8() {
+                var quantidadeElemento = document.getElementById("qtd8");
+                var quantidade = parseInt(quantidadeElemento.value);
+                quantidade++;
+                quantidadeElemento.value = quantidade;
+            }
+            function diminuirQuantidade8() {
+                var quantidadeElemento = document.getElementById("qtd8");
+                var quantidade = parseInt(quantidadeElemento.value);
+                if (quantidade > 0) {
+                    quantidade--;
+                    quantidadeElemento.value = quantidade;
+                }
+            }
+            </script>
+            <script>
+                function AddCarrinho(produto, qtd, valor, posicao)
+                {
+                    localStorage.setItem("produto" + posicao, produto);
+                    localStorage.setItem("qtd" + posicao, qtd);
+                    valor = valor * qtd;
+                    localStorage.setItem("valor" + posicao, valor);
+                    alert("Produto adicionado ao carrinho!");
+                }
+            </script>
+        <footer>
+            <div class="rodape1">
+                <h1>Sobre nós </h1>
+                <p>Iniciaram nossa empresa em 2023 em uma loja física 
+                <br>
+                    em Santo André de adestramento, e agora também estamos 
+                <br>
+                    nas plataformas digitais com novidades e melhor 
+                <br>
+                    praticidade pra você.</p>
+            </div>
+            <div class="rodape2">
+                <h1>Fale Conosco:</h1>
+                <a href="https://web.whatsapp.com/" style="text-decoration: none" 
+                target="_blank">
+                    <img src="img/whatsapp.png" class="redes">
+                </a>
+                <a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
+                    <img src="img/instagram.png" class="redes">
+                </a>
+                <a href="https://www.facebook.com/" style="text-decoration: none" 
+                target="_blank">   
+                    <img src="img/facebook.png" class="redes">
+                </a>
+            </div>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </footer>
+    </body>
 </html>
