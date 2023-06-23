@@ -82,7 +82,6 @@ ul li:hover ul{
     background: #f1f7fe;
     border-radius: 16px;
     color: #2B4F6B;
-    box-shadow: 100px;
     margin: auto;
     transform: translateY(-50%);
     padding: 24px;
@@ -114,7 +113,7 @@ ul li:hover ul{
 
 .form-container {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 8px;
     background-color: #fff;
     margin: 1rem 0 .5rem;
@@ -133,17 +132,20 @@ ul li:hover ul{
     padding: 8px 15px;
 }
 
-.entrar{
+.entra{
     position:relative;
     bottom: 30px;
     text-decoration: none;
 }
-.entrar a {
+.entra a {
     font-weight: bold;
     color: #2B4F6B;
     transition: color .3s ease;
 }
 
+.entra:hover a{
+    color: #ffffff;
+}
 
 .form-section {
     padding: 4px;

@@ -33,4 +33,4 @@ document.querySelector('.prev-button').addEventListener('click', prevSlide);
 document.querySelector('.next-button').addEventListener('click', nextSlide);
 
 // Configura um intervalo para chamar a função nextSlide a cada 2 segundos, para criar uma transição automática
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 3000);
