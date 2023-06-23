@@ -104,7 +104,6 @@ ul li:hover ul{
 }
 
 .produto:hover a{
-    zoom: 1.35;
     text-decoration: none; 
 }
 
