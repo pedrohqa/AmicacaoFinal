@@ -42,9 +42,13 @@
 				</a>
 			</div>
 		</header>
+		<div class="linha">
+			<h1 class="titulo">Carrinho de Compras</h1>
+			<img src="Carrinho.png" class="imagem">
+		</div>
 		<div class="painel">
-			<div id="itens"> </div>
-			<div>Total: <span id="total"></span> </div>
+			<div class="itens" id="itens"> </div>
+			<div class="total">Total: <span id="total"></span> </div>
 		
 			<script>
 				var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
@@ -69,39 +73,11 @@
 				} 
 				// exibe o total dos recheios
 				document.getElementById("total").innerHTML = total.toFixed(2); 
-			</script>
-		
-			<button type="button" onclick="localStorage.clear(); location.reload();"> Limpar carrinho </button>
-			<button type="button"><a href="index.html" class="voltar">Voltar as Compras</a></button>
-			<button type="button"><a href="formapagamento.html" class="voltar">Formas de Pagamento</a></button>
-		</div>
+			</script>		
+			<button class="limpar" type="button" onclick="localStorage.clear(); location.reload();">Limpar carrinho 
+			</button>
 		</div>	
-		<footer>
-			<div class="rodape1">
-				<h1>Sobre nós </h1>
-				<p>Iniciaram nossa empresa em 2023 em uma loja física 
-				<br>
-					em Santo André de adestramento, e agora também estamos 
-				<br>
-					nas plataformas digitais com novidades e melhor 
-				<br>
-					praticidade pra você.</p>
-			</div>
-			<div class="rodape2">
-				<h1>Fale Conosco:</h1>
-				<a href="https://web.whatsapp.com/" style="text-decoration: none" 
-				target="_blank">
-					<img src="whatsapp.png" class="redes">
-				</a>
-				<a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
-					<img src="instagram.png" class="redes">
-				</a>
-				<a href="https://www.facebook.com/" style="text-decoration: none" 
-				target="_blank">   
-					<img src="facebook.png" class="redes">
-				</a>
-			</div>
-			<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</footer>
+		<button type="button" class="voltar"><a href="index.html">Voltar as Compras</a></button>
+		<button type="button"><a href="formapagamento.html" class="formas">Formas de Pagamento</a></button>		
 	</body>
 </html>

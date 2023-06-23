@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     height: 650px;
+    background: #cfeaff;
     
 }
 header{
@@ -70,65 +71,93 @@ ul li:hover ul{
     width: 210px; 
     display: block; 
 }
+.linha{
+    position: relative;
+    top: 45px;
+    width: 100%;
+    height: 100px;
+}
+
+.titulo{
+    position: relative;
+    font-size:55px;
+    font-family:;
+    color: #2B4F6B;
+    text-align: center;
+    top: 15px;
+}
+.imagem{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin-left: 99vh;
+    top: 80px;
+}
 
 .painel{
     position: relative;
     top: 100px;
-    margin-left: 20px;
-}
-
- footer{
-position:absolute;
-margin: 0px;
-bottom: -200px;  /*sempre deixar do mesmo tamanho do height body da pagina porem negativo (-) */
-width: 100%;
-height: 210px;
-background-color: #A7CFEE;
-color: #2B4F6B;
-justify-content: space-between;
-/* border: 10px solid transparent; */
-
-}
-.rodape1{
-    float: left;
-    margin-left: 5px;
-    margin-right: 0px;
-    text-align: center;
-    position: relative;
-    top: 20px;
-}
-.rodape2{
-    float:left;
-    margin-left: 110px;
-    margin-right: 0px;
-    align-content: center;
-    position: relative;
-    top: 25px;
-}
-
-.mapa{
-    position: relative;
-    bottom: -5px;
-    float: right ;
-    margin-right: 30px;
-    
-}
-
-.redes{
-margin: 10px;
-width: 40px;
-}
-
-.voltar{
-    color: aliceblue;
-}
-
-.painel {
+    width: 700px;
+    margin-left: 250px;
+    margin-right: 250px;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
 }
+
+.limpar{
+    background-color: #4988B8;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('lixeira.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-size: 25px;
+    background-position-x: 5px;
+    padding-left: 35px; 
+    background-position-y: -2px;
+}
+
+.voltar{
+    position: relative;
+    text-decoration: none;
+    margin-left: 260px;
+    top: 120px;
+    background-color: #4988B8;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.formas{
+    position: relative;
+    top:120px;
+    background-color: #4988B8;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 350px;
+}
+
 
 #itens {
     margin-bottom: 10px;
@@ -144,14 +173,7 @@ width: 40px;
     font-weight: bold;
 }
 
-button {
-    background-color: #2B4F6B;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
+a{
     text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    cursor: pointer;
+    color: white;
 }
