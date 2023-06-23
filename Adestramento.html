@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Amiçãozão</title>
+        <title>Amicãozão</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='adestramento.css'>
         <script src='main.js'></script>
@@ -88,6 +88,7 @@
                 <button class="button">Adicionar ao carrinho
                 <a href="carrinho.html"></a>
                 </button>
+                <!-- <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bifinho Bola Carne', document.getElementById('qtd7').value, '6.50', 7)"> Comprar </button> -->
             </div> 
             <div class="linha2">
                 <div></div>
@@ -102,6 +103,16 @@
                 </div>
             </div>
         </div>
+        <script>
+            function AddCarrinho(produto, qtd, valor, posicao)
+            {
+                localStorage.setItem("produto" + posicao, produto);
+                localStorage.setItem("qtd" + posicao, qtd);
+                valor = valor * qtd;
+                localStorage.setItem("valor" + posicao, valor);
+                alert("Produto adicionado ao carrinho!");
+            }
+        </script>
         <footer>
             <div class="rodape1">
                 <h1>Sobre nós </h1>
@@ -131,3 +142,7 @@
         </footer>
     </body>
 </html>
+
+
+
+                    

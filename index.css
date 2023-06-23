@@ -142,7 +142,7 @@ ul li:hover ul{
     margin-left: 80px;
 }
 
-.botao{
+.botao1{
     position: relative;
     width: 200px;
     top: 40px;
@@ -170,7 +170,7 @@ ul li:hover ul{
 
 }
 
-.botao:hover {
+.botao1:hover {
     background-color: #4988B8;
     box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
     color: #fff;
@@ -183,7 +183,52 @@ ul li:hover ul{
     padding-left: 10px; 
     } 
   
-  .botao:active {
+  .botao1:active {
+    transform: translateY(-1px);
+  } 
+
+  .botao2{
+    position: relative;
+    width: 200px;
+    top: 80px;
+    margin-left:220px;
+    font-size: 25px;
+    letter-spacing: 1.25px;
+    color: #2B4F6B;
+    background-color: #5FAFEB;
+    border-bottom: #2B4F6B;
+
+    border: #2B4F6B;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    left: 5px;
+    margin-right: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-size: 45px;
+    background-position-x: 25px;
+    padding-left: 10px; 
+
+}
+
+.botao2:hover {
+    background-color: #4988B8;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-size: 45px;
+    background-position-x: 25px;
+    padding-left: 10px; 
+    } 
+  
+  .botao2:active {
     transform: translateY(-1px);
   } 
   
