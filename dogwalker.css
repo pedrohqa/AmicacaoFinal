@@ -355,7 +355,7 @@ button:active {
 } 
 
 .linha2{
-  position: relative;
+   position: relative;
   background: #5FAFEB;
   border-radius: 15px;
   height: 100px;

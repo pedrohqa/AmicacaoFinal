@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Amiçãozão</title>
+    <title>Amicãozão</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='carrinho.css'>
     <script src='main.js'></script>
@@ -42,18 +42,53 @@
 				</a>
 			</div>
 		</header>
+		<style>
+			.painel {
+				background-color: #f4f4f4;
+				border: 1px solid #ddd;
+				padding: 10px;
+				border-radius: 5px;
+			}
+		
+			#itens {
+				margin-bottom: 10px;
+			}
+		
+			#itens hr {
+				border-top: 1px solid #ddd;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+		
+			#total {
+				font-weight: bold;
+			}
+		
+			button {
+				background-color: #2B4F6B;
+				color: white;
+				border: none;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		</style>
+		
 		<div class="painel">
 			<div id="itens"> </div>
 			<div>Total: <span id="total"></span> </div>
-
+		
 			<script>
 				var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
 				var i = 0;     // variável que irá percorrer as posições
 				var valor = 0; // variável que irá receber o preço do produto convertido em Float.
-				
+		
 				for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
 				{
-					var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+					var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição.
 					if(prod != null) 
 					{	
 						// exibe os dados da lista dentro da div itens
@@ -61,7 +96,7 @@
 						document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
 						document.getElementById("itens").innerHTML += " ";
 						document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
-
+		
 						// calcula o total dos recheios
 						valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
 						total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
@@ -70,8 +105,12 @@
 				// exibe o total dos recheios
 				document.getElementById("total").innerHTML = total.toFixed(2); 
 			</script>
-
-			<button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+		
+			<button type="button" onclick="localStorage.clear(); location.reload();"> Limpar carrinho </button>
+			<button type="button"><a href="index.html" class="voltar">Voltar as Compras</a></button>
+			<button type="button"><a href="botão.html" class="voltar">Formas de Pagamento</a></button>
+		</div>
+		
 		</div>	
 		<footer>
 			<div class="rodape1">
