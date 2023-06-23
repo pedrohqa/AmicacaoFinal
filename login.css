@@ -5,6 +5,7 @@ body {
     /* overflow-y: hidden; */
     justify-content: space-between;
     background: #bfe2ff;
+    overflow: hidden;
 }
 
 header{
@@ -185,6 +186,7 @@ footer {
     height: auto;
     bottom: 500px;
     z-index: -2;
+    
 }
 
 .foto{
