@@ -122,3 +122,36 @@ width: 40px;
 .voltar{
     color: aliceblue;
 }
+
+.painel {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#itens {
+    margin-bottom: 10px;
+}
+
+#itens hr {
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+button {
+    background-color: #2B4F6B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
