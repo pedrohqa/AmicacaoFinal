@@ -248,7 +248,7 @@ color: #002646;
 
 .coluna2{
   display: inline-block;
-  width: 33.33%; /* Divide o espaço igualmente entre as três divs */
+  width: 28%; /* Divide o espaço igualmente entre as três divs */
   vertical-align: top; /* Alinha as divs verticalmente no topo */
   box-sizing: border-box;
   text-decoration: none;
@@ -260,7 +260,7 @@ color: #002646;
   color: #A7CFEE;
   text-shadow: 2px 2px 10px #000;
   border-radius: 15px;
-  margin-left: 80px;
+  margin-left: 65px;
   
 }
 
@@ -269,6 +269,7 @@ color: #002646;
   text-align: center;
   font-size: xx-large;
   text-decoration: none;
+  width: 400px;
 }
 
 .text5{
@@ -276,6 +277,7 @@ color: #002646;
   text-align: center;
   font-size: large;
   text-decoration: none;
+  width: 388px;
 }
 
 .text6{
@@ -286,8 +288,8 @@ color: #002646;
 
 .coluna3{
   float: right;
+  justify-content: center;
   vertical-align: top; /* Alinha as divs verticalmente no topo */
-  box-sizing: border-box;
   width: 380px;
   height: 375px;
   background: #b0ddff;
@@ -295,11 +297,9 @@ color: #002646;
   border-radius: 8px;
   text-align: center;
   position: relative;
-  margin-left: none;
-  bottom: 399px;
-  margin: 10px;
+  bottom: 0px;
+  margin-right: 25px;
   justify-content: center;
-  margin-right: none;
 }
 
 .pacotes{
@@ -376,7 +376,7 @@ button:active {
 
 .logo2{
   position: relative;
-  margin-left:540px; 
+  margin-left: 455px; 
   float: left;
   width: 45px; 
 }
@@ -437,3 +437,4 @@ button:active {
   margin: 10px;
   width: 40px;
 }
+
